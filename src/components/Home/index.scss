@@ -1,0 +1,61 @@
+@import 'animate.css';
+
+.home-page{
+  width: 100%;
+  margin-top: 100px;
+  height: 100vh;
+  min-height: 500px;
+  will-change: contents;
+}
+.home-content{
+  color: #FBEAEB ;
+  font-size: 35px;
+  margin: 0;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  .my-info{
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-weight: 300;
+}
+  .contact-btn{
+    border: 1px solid white;
+    color: #FBEAEB;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 5px 20px;
+    position: absolute;
+    margin-top: 30px;
+    text-decoration: none;
+    &:hover{
+      background-color: hsl(230, 46%, 34%);
+      color: #FBEAEB;
+      transition-duration: 0.5s;
+}
+  }
+}
+
+.text-animate{
+  display: inline-block;
+  opacity: 0;
+  min-width: 10px;
+  animation: bounceIn 3s 3s;
+  -webkit-animation: bounceIn 3s 3s;
+}
+  .text-animate-hover{
+      display: inline-block;
+      min-width: 10px;
+      &:hover{
+        animation: rubberBand 1s;
+        -webkit-animation: rubberBand 1s;
+    }
+  }
+
+@for $i from 1 through 87 {
+  .text-animate._#{$i}{
+  animation-delay: #{$i/100}s;
+  }
+}

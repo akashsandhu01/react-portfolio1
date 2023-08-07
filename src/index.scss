@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+$sidebar-color: #2F3C7E;
+$icon-color: #FBEAEB;
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'open-sans';
+        #background-video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+          }
+    }
+
+    .dark-mode-btn{
+        position: fixed;
+        right: 5%;
+        svg
+            {
+            font-size: 40px;
+            color: $icon-color;
+            cursor: pointer;
+        }
+        button{
+            background-color: rgb(0, 0, 0, 0);
+            border: 0;
+        }
+    }
+    #dark-mode, #day-mode{
+        position: absolute;
+    }
+    #dark-mode{
+        opacity: 0;
+    }
+

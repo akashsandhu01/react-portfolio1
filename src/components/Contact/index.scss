@@ -1,0 +1,13 @@
+.progress-bar-wrapper{
+    position: absolute;
+    position: block;
+    left: 0;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    animation: fadeOut 1.5s 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadeOut 1.5s 1s;
+    opacity: 0;
+}
